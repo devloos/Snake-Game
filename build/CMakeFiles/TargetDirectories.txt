@@ -1,0 +1,3 @@
+/Users/Dev/C++Projects/Projects/Simple-Snake-Game/build/CMakeFiles/snake.dir
+/Users/Dev/C++Projects/Projects/Simple-Snake-Game/build/CMakeFiles/edit_cache.dir
+/Users/Dev/C++Projects/Projects/Simple-Snake-Game/build/CMakeFiles/rebuild_cache.dir
