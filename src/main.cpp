@@ -51,6 +51,7 @@ int main() {
 				mvprintw(24, 0, "Charcter pressed is = %3d Hopefully it can be printed as '%c'", c, c);
 				refresh();
 				break;
+
 		}
 		if(choice != 0) {	/* User did a choice come out of the infinite loop */
          if (choice == 2)
