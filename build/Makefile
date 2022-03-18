@@ -225,6 +225,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake.dir/build.make CMakeFiles/snake.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/printMenu.o: src/printMenu.cpp.o
+.PHONY : src/printMenu.o
+
+# target to build an object file
+src/printMenu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake.dir/build.make CMakeFiles/snake.dir/src/printMenu.cpp.o
+.PHONY : src/printMenu.cpp.o
+
+src/printMenu.i: src/printMenu.cpp.i
+.PHONY : src/printMenu.i
+
+# target to preprocess a source file
+src/printMenu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake.dir/build.make CMakeFiles/snake.dir/src/printMenu.cpp.i
+.PHONY : src/printMenu.cpp.i
+
+src/printMenu.s: src/printMenu.cpp.s
+.PHONY : src/printMenu.s
+
+# target to generate assembly for a file
+src/printMenu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake.dir/build.make CMakeFiles/snake.dir/src/printMenu.cpp.s
+.PHONY : src/printMenu.cpp.s
+
 src/setup.o: src/setup.cpp.o
 .PHONY : src/setup.o
 
@@ -270,6 +294,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/printMenu.o"
+	@echo "... src/printMenu.i"
+	@echo "... src/printMenu.s"
 	@echo "... src/setup.o"
 	@echo "... src/setup.i"
 	@echo "... src/setup.s"

@@ -1122,6 +1122,18 @@
 			"value" : "/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/lib/libncurses.tbd"
 		},
 		{
+			"name" : "ncurses",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/lib/libncurses.tbd"
+		},
+		{
 			"name" : "snake_BINARY_DIR",
 			"properties" : 
 			[

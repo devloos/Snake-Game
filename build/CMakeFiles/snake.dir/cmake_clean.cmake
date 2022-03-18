@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/snake.dir/src/logic.cpp.o.d"
   "CMakeFiles/snake.dir/src/main.cpp.o"
   "CMakeFiles/snake.dir/src/main.cpp.o.d"
+  "CMakeFiles/snake.dir/src/printMenu.cpp.o"
+  "CMakeFiles/snake.dir/src/printMenu.cpp.o.d"
   "CMakeFiles/snake.dir/src/setup.cpp.o"
   "CMakeFiles/snake.dir/src/setup.cpp.o.d"
   "snake"
