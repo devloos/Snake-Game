@@ -4,4 +4,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_BUILD_TYPE Debug)
 
 project(snake)
-add_executable(snake src/main.cpp)
+add_executable(snake src/main.cpp src/setup.cpp src/draw.cpp src/input.cpp src/logic.cpp)
+target_include_directories(snake PUBLIC ../include)
+find_library(MYLIB ncurses)
+target_link_libraries(snake PUBLIC ${MYLIB})

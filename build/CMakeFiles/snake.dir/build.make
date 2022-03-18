@@ -73,27 +73,92 @@ CMakeFiles/snake.dir/src/main.cpp.o: CMakeFiles/snake.dir/flags.make
 CMakeFiles/snake.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/snake.dir/src/main.cpp.o: CMakeFiles/snake.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Dev/C++Projects/Projects/Simple-Snake-Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/snake.dir/src/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snake.dir/src/main.cpp.o -MF CMakeFiles/snake.dir/src/main.cpp.o.d -o CMakeFiles/snake.dir/src/main.cpp.o -c /Users/Dev/C++Projects/Projects/Simple-Snake-Game/src/main.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snake.dir/src/main.cpp.o -MF CMakeFiles/snake.dir/src/main.cpp.o.d -o CMakeFiles/snake.dir/src/main.cpp.o -c /Users/Dev/C++Projects/Projects/Simple-Snake-Game/src/main.cpp
 
 CMakeFiles/snake.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/snake.dir/src/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Dev/C++Projects/Projects/Simple-Snake-Game/src/main.cpp > CMakeFiles/snake.dir/src/main.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Dev/C++Projects/Projects/Simple-Snake-Game/src/main.cpp > CMakeFiles/snake.dir/src/main.cpp.i
 
 CMakeFiles/snake.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/snake.dir/src/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Dev/C++Projects/Projects/Simple-Snake-Game/src/main.cpp -o CMakeFiles/snake.dir/src/main.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Dev/C++Projects/Projects/Simple-Snake-Game/src/main.cpp -o CMakeFiles/snake.dir/src/main.cpp.s
+
+CMakeFiles/snake.dir/src/setup.cpp.o: CMakeFiles/snake.dir/flags.make
+CMakeFiles/snake.dir/src/setup.cpp.o: ../src/setup.cpp
+CMakeFiles/snake.dir/src/setup.cpp.o: CMakeFiles/snake.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Dev/C++Projects/Projects/Simple-Snake-Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/snake.dir/src/setup.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snake.dir/src/setup.cpp.o -MF CMakeFiles/snake.dir/src/setup.cpp.o.d -o CMakeFiles/snake.dir/src/setup.cpp.o -c /Users/Dev/C++Projects/Projects/Simple-Snake-Game/src/setup.cpp
+
+CMakeFiles/snake.dir/src/setup.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/snake.dir/src/setup.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Dev/C++Projects/Projects/Simple-Snake-Game/src/setup.cpp > CMakeFiles/snake.dir/src/setup.cpp.i
+
+CMakeFiles/snake.dir/src/setup.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/snake.dir/src/setup.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Dev/C++Projects/Projects/Simple-Snake-Game/src/setup.cpp -o CMakeFiles/snake.dir/src/setup.cpp.s
+
+CMakeFiles/snake.dir/src/draw.cpp.o: CMakeFiles/snake.dir/flags.make
+CMakeFiles/snake.dir/src/draw.cpp.o: ../src/draw.cpp
+CMakeFiles/snake.dir/src/draw.cpp.o: CMakeFiles/snake.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Dev/C++Projects/Projects/Simple-Snake-Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/snake.dir/src/draw.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snake.dir/src/draw.cpp.o -MF CMakeFiles/snake.dir/src/draw.cpp.o.d -o CMakeFiles/snake.dir/src/draw.cpp.o -c /Users/Dev/C++Projects/Projects/Simple-Snake-Game/src/draw.cpp
+
+CMakeFiles/snake.dir/src/draw.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/snake.dir/src/draw.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Dev/C++Projects/Projects/Simple-Snake-Game/src/draw.cpp > CMakeFiles/snake.dir/src/draw.cpp.i
+
+CMakeFiles/snake.dir/src/draw.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/snake.dir/src/draw.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Dev/C++Projects/Projects/Simple-Snake-Game/src/draw.cpp -o CMakeFiles/snake.dir/src/draw.cpp.s
+
+CMakeFiles/snake.dir/src/input.cpp.o: CMakeFiles/snake.dir/flags.make
+CMakeFiles/snake.dir/src/input.cpp.o: ../src/input.cpp
+CMakeFiles/snake.dir/src/input.cpp.o: CMakeFiles/snake.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Dev/C++Projects/Projects/Simple-Snake-Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/snake.dir/src/input.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snake.dir/src/input.cpp.o -MF CMakeFiles/snake.dir/src/input.cpp.o.d -o CMakeFiles/snake.dir/src/input.cpp.o -c /Users/Dev/C++Projects/Projects/Simple-Snake-Game/src/input.cpp
+
+CMakeFiles/snake.dir/src/input.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/snake.dir/src/input.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Dev/C++Projects/Projects/Simple-Snake-Game/src/input.cpp > CMakeFiles/snake.dir/src/input.cpp.i
+
+CMakeFiles/snake.dir/src/input.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/snake.dir/src/input.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Dev/C++Projects/Projects/Simple-Snake-Game/src/input.cpp -o CMakeFiles/snake.dir/src/input.cpp.s
+
+CMakeFiles/snake.dir/src/logic.cpp.o: CMakeFiles/snake.dir/flags.make
+CMakeFiles/snake.dir/src/logic.cpp.o: ../src/logic.cpp
+CMakeFiles/snake.dir/src/logic.cpp.o: CMakeFiles/snake.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Dev/C++Projects/Projects/Simple-Snake-Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/snake.dir/src/logic.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snake.dir/src/logic.cpp.o -MF CMakeFiles/snake.dir/src/logic.cpp.o.d -o CMakeFiles/snake.dir/src/logic.cpp.o -c /Users/Dev/C++Projects/Projects/Simple-Snake-Game/src/logic.cpp
+
+CMakeFiles/snake.dir/src/logic.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/snake.dir/src/logic.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Dev/C++Projects/Projects/Simple-Snake-Game/src/logic.cpp > CMakeFiles/snake.dir/src/logic.cpp.i
+
+CMakeFiles/snake.dir/src/logic.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/snake.dir/src/logic.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Dev/C++Projects/Projects/Simple-Snake-Game/src/logic.cpp -o CMakeFiles/snake.dir/src/logic.cpp.s
 
 # Object files for target snake
 snake_OBJECTS = \
-"CMakeFiles/snake.dir/src/main.cpp.o"
+"CMakeFiles/snake.dir/src/main.cpp.o" \
+"CMakeFiles/snake.dir/src/setup.cpp.o" \
+"CMakeFiles/snake.dir/src/draw.cpp.o" \
+"CMakeFiles/snake.dir/src/input.cpp.o" \
+"CMakeFiles/snake.dir/src/logic.cpp.o"
 
 # External object files for target snake
 snake_EXTERNAL_OBJECTS =
 
 snake: CMakeFiles/snake.dir/src/main.cpp.o
+snake: CMakeFiles/snake.dir/src/setup.cpp.o
+snake: CMakeFiles/snake.dir/src/draw.cpp.o
+snake: CMakeFiles/snake.dir/src/input.cpp.o
+snake: CMakeFiles/snake.dir/src/logic.cpp.o
 snake: CMakeFiles/snake.dir/build.make
+snake: /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/lib/libncurses.tbd
 snake: CMakeFiles/snake.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Dev/C++Projects/Projects/Simple-Snake-Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable snake"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Dev/C++Projects/Projects/Simple-Snake-Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable snake"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/snake.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

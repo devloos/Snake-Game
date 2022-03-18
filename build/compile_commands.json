@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/Users/Dev/C++Projects/Projects/Simple-Snake-Game/build",
+  "command": "/usr/bin/clang++  -I/Users/Dev/C++Projects/Projects/Simple-Snake-Game/../include -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++17 -o CMakeFiles/snake.dir/src/main.cpp.o -c /Users/Dev/C++Projects/Projects/Simple-Snake-Game/src/main.cpp",
+  "file": "/Users/Dev/C++Projects/Projects/Simple-Snake-Game/src/main.cpp"
+},
+{
+  "directory": "/Users/Dev/C++Projects/Projects/Simple-Snake-Game/build",
+  "command": "/usr/bin/clang++  -I/Users/Dev/C++Projects/Projects/Simple-Snake-Game/../include -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++17 -o CMakeFiles/snake.dir/src/setup.cpp.o -c /Users/Dev/C++Projects/Projects/Simple-Snake-Game/src/setup.cpp",
+  "file": "/Users/Dev/C++Projects/Projects/Simple-Snake-Game/src/setup.cpp"
+},
+{
+  "directory": "/Users/Dev/C++Projects/Projects/Simple-Snake-Game/build",
+  "command": "/usr/bin/clang++  -I/Users/Dev/C++Projects/Projects/Simple-Snake-Game/../include -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++17 -o CMakeFiles/snake.dir/src/draw.cpp.o -c /Users/Dev/C++Projects/Projects/Simple-Snake-Game/src/draw.cpp",
+  "file": "/Users/Dev/C++Projects/Projects/Simple-Snake-Game/src/draw.cpp"
+},
+{
+  "directory": "/Users/Dev/C++Projects/Projects/Simple-Snake-Game/build",
+  "command": "/usr/bin/clang++  -I/Users/Dev/C++Projects/Projects/Simple-Snake-Game/../include -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++17 -o CMakeFiles/snake.dir/src/input.cpp.o -c /Users/Dev/C++Projects/Projects/Simple-Snake-Game/src/input.cpp",
+  "file": "/Users/Dev/C++Projects/Projects/Simple-Snake-Game/src/input.cpp"
+},
+{
+  "directory": "/Users/Dev/C++Projects/Projects/Simple-Snake-Game/build",
+  "command": "/usr/bin/clang++  -I/Users/Dev/C++Projects/Projects/Simple-Snake-Game/../include -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++17 -o CMakeFiles/snake.dir/src/logic.cpp.o -c /Users/Dev/C++Projects/Projects/Simple-Snake-Game/src/logic.cpp",
+  "file": "/Users/Dev/C++Projects/Projects/Simple-Snake-Game/src/logic.cpp"
+}
+]
