@@ -37,8 +37,8 @@ void logic() {
    else if (playerX == fruitX && playerY == fruitY) {
       fruitX = rand() % WIDTH;
       fruitY = rand() % HEIGHT;
-      tailx.push_back(-1);
-      taily.push_back(-1);
+      tailx.push_back(-100000);
+      taily.push_back(-100000);
       ++nTail;
    }
    for (int i = 0; i < nTail; i++) {

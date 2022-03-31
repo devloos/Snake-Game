@@ -4,7 +4,7 @@ void draw() {
    usleep(50000);
    clear();
    for (int i {0}; i < WIDTH + 2; i++) {
-      printw("#");
+      printw("#");//##################
    }
    printw("\n");
 
