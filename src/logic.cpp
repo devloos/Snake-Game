@@ -32,7 +32,7 @@ void logic() {
       default:
          break;
    }
-   if (playerX > WIDTH || playerY > (HEIGHT - 1) || playerX < 0 || playerY < 0)
+   if (playerX > (WIDTH - 1) || playerY > (HEIGHT - 1) || playerX < 0 || playerY < 0)
       gameOver = true;
    else if (playerX == fruitX && playerY == fruitY) {
       fruitX = rand() % WIDTH;
