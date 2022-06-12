@@ -33,5 +33,5 @@
 
 # Custom
 *.DS_Store
-build/
+*build/
 *.vscode/
