@@ -5,7 +5,7 @@
   "configurations": [
     { 
       "name": "mac",
-      "includePath": ["${myDefaultIncludePath}"]
+      "includePath": ["${myDefaultIncludePath}", "/usr/local/include/ncurses"]
     }
   ],
   "version": 4
