@@ -1,12 +1,18 @@
 # Snake-Game
 
-Just play it yo
+Dependencies:
+- ncurses: going to add script to install if user system does not come with lib
 
-JK make a build dir
+Clone repo `https://github.com/Puwya/Snake-Game.git`
 
-cd into it
+Change directory `cd Snake-Game`
 
-run this -> cmake ../
+Make sure you have cmake 3
 
-and then run exe yw
-<div style="width:100%;height:0;padding-bottom:106%;position:relative;"><iframe src="https://giphy.com/embed/9ph10YIn4glnEIpXzT" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/9ph10YIn4glnEIpXzT">via GIPHY</a></p>
+Run Cmake `cmake ..`
+
+Run EXE `./snake`
+
+<div align="center">
+  <img src="https://media.giphy.com/media/9ph10YIn4glnEIpXzT/giphy.gif">
+</div>
