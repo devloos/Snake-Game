@@ -1,7 +1,7 @@
 # Snake-Game
 
 Dependencies:
-- ncurses: going to add script to install if user system does not come with lib
+- ncurses: `system-check` if ncurses comes installed or run `./install.sh` to install dependencies
 
 Clone repo `https://github.com/Puwya/Snake-Game.git`
 
