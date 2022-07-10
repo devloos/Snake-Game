@@ -1,4 +1,4 @@
-#include "../include/header.h"
+#include "../../include/header.h"
 
 char* choices[] = {"Play", "Exit"};
 int n_choices = sizeof(choices) / sizeof(char*);

@@ -5,10 +5,10 @@ set(CMAKE_BUILD_TYPE Debug)
 
 project(snake)
 
-target_include_directories(${PROJECT_NAME} PUBLIC /include)
 add_executable(
-    ${PROJECT_NAME} src/main.cpp src/setup.cpp src/draw.cpp src/input.cpp src/logic.cpp
-    src/printMenu.cpp src/menuInput.cpp src/inputAi.cpp)
+    ${PROJECT_NAME} src/main.cpp src/setup.cpp src/handlers/draw.cpp src/handlers/input.cpp
+    src/handlers/logic.cpp src/menu/printMenu.cpp src/menu/menuInput.cpp src/inputAi.cpp)
+target_include_directories(${PROJECT_NAME} PUBLIC /include)
 
 find_library(ncurses ncurses)
 target_link_libraries(snake PUBLIC ${ncurses})
