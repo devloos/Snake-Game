@@ -14,5 +14,5 @@ Run Cmake `cmake ..`
 Run EXE `./snake`
 
 <div align="center">
-  <img src="https://media.giphy.com/media/9ph10YIn4glnEIpXzT/giphy.gif">
+  <img src="assets/klfjdsalk.gif">
 </div>
