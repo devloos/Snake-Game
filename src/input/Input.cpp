@@ -4,8 +4,7 @@ namespace Input {
 void Menu() {
   bool choiceMade;
   WINDOW* menu_win;
-  int highlight = 1;
-  int choice = 0;
+  int Highlighted = PLAY;
 
   initscr();
   clear();
@@ -18,25 +17,28 @@ void Menu() {
   keypad(menu_win, TRUE);
   refresh();
   do {
-    Print::Menu(menu_win, highlight);
+    Print::Menu(menu_win, Highlighted);
     c = wgetch(menu_win);
     switch (c) {
       case KEY_UP: {
-        if (highlight == 1)
-          highlight = n_choices;
-        else
-          --highlight;
+        if (Highlighted == PLAY) {
+          Highlighted = PLAY;
+        } else {
+          --Highlighted;
+        }
         break;
       }
       case KEY_DOWN: {
-        if (highlight == n_choices)
-          highlight = 1;
-        else
-          ++highlight;
+        if (Highlighted == EXIT) {
+          Highlighted = EXIT;
+        } else {
+          ++Highlighted;
+        }
         break;
       }
       case 10: {
-        choice = highlight;
+        if (Highlighted == EXIT) gameOver = true;
+        choiceMade = true;
         break;
       }
       default: {
@@ -44,12 +46,6 @@ void Menu() {
         refresh();
         break;
       }
-    }
-    if (choice == 1) /* User did a choice come out of the infinite loop */
-      choiceMade = true;
-    else if (choice == 2) {
-      choiceMade = true;
-      gameOver = true;
     }
   } while (!choiceMade);
   refresh();

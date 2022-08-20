@@ -10,7 +10,7 @@ bool choiceMade;
 namespace Application {
 void Start() {
   srand(time(0));
-  setup();
+  Setup();
   Input::Menu();
   if (!gameOver) {
     initscr();
@@ -24,6 +24,24 @@ void Start() {
     }
     endwin();
   }
+}
+
+void Setup() {
+  tailx.clear();
+  taily.clear();
+
+  gameOver = false;
+
+  playerX = WIDTH / 2;
+  playerY = HEIGHT / 2;
+
+  fruitX = rand() % WIDTH;
+  fruitY = rand() % HEIGHT;
+
+  tailx.push_back(playerX);
+  taily.push_back(playerY);
+
+  nTail = 0;
 }
 
 }  // namespace Application

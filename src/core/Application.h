@@ -15,13 +15,13 @@ extern int playerX, playerY, fruitX, fruitY, c, nTail;
 extern char* choices[];
 extern bool choiceMade;
 
-void setup();
 void draw();
 void input();
 void logic();
 
 namespace Application {
 void Start();
+void Setup();
 
 }  // namespace Application
 

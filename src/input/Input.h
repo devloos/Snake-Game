@@ -2,6 +2,7 @@
 #define INPUT_H_
 #include <ncurses.h>
 
+#include <cstdint>
 #include <string>
 
 #include "../print/Print.h"
@@ -10,7 +11,8 @@ extern bool gameOver;
 
 namespace Input {
 const std::string choices[] = {"Play", "Exit"};
-const int n_choices = sizeof(choices);
+const uint8_t PLAY = 1;
+const uint8_t EXIT = 2;
 
 void Menu();
 }  // namespace Input
