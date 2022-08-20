@@ -1,9 +1,8 @@
-#include "../../include/header.h"
+#include "Input.h"
 
-char* choices[] = {"Play", "Exit"};
-int n_choices = sizeof(choices) / sizeof(char*);
-
-void menuInput() {
+namespace Input {
+void Menu() {
+  bool choiceMade;
   WINDOW* menu_win;
   int highlight = 1;
   int choice = 0;
@@ -19,28 +18,32 @@ void menuInput() {
   keypad(menu_win, TRUE);
   refresh();
   do {
-    print_menu(menu_win, highlight);
+    Print::Menu(menu_win, highlight);
     c = wgetch(menu_win);
     switch (c) {
-      case KEY_UP:
+      case KEY_UP: {
         if (highlight == 1)
           highlight = n_choices;
         else
           --highlight;
         break;
-      case KEY_DOWN:
+      }
+      case KEY_DOWN: {
         if (highlight == n_choices)
           highlight = 1;
         else
           ++highlight;
         break;
-      case 10:
+      }
+      case 10: {
         choice = highlight;
         break;
-      default:
+      }
+      default: {
         mvprintw(24, 0, "Invalid Character press");
         refresh();
         break;
+      }
     }
     if (choice == 1) /* User did a choice come out of the infinite loop */
       choiceMade = true;
@@ -52,3 +55,4 @@ void menuInput() {
   refresh();
   endwin();
 }
+}  // namespace Input

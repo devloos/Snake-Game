@@ -1,6 +1,7 @@
-#include "../../include/header.h"
+#include "Print.h"
 
-void print_menu(WINDOW* menu_win, int highlight) {
+namespace Print {
+void Menu(WINDOW* menu_win, int highlight) {
   int x, y, i;
   x = 3;
   y = 1;
@@ -9,11 +10,12 @@ void print_menu(WINDOW* menu_win, int highlight) {
     if (highlight == i + 1) /* High light the present choice */
     {
       wattron(menu_win, A_REVERSE);
-      mvwprintw(menu_win, y, x, "%s", choices[i]);
+      mvwprintw(menu_win, y, x, "%s", Input::choices[i].c_str());
       wattroff(menu_win, A_REVERSE);
     } else
-      mvwprintw(menu_win, y, x, "%s", choices[i]);
+      mvwprintw(menu_win, y, x, "%s", Input::choices[i].c_str());
     ++y;
   }
   wrefresh(menu_win);
 }
+}  // namespace Print
