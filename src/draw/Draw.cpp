@@ -1,7 +1,7 @@
 #include "Draw.h"
 
 namespace Draw {
-void Start(const Snake &snake) {
+void Start(const Snake &snake, const Fruit &fruit) {
   usleep(50000);
   clear();
   for (int i{0}; i < Constant::WIDTH + 2; i++) {
@@ -15,7 +15,7 @@ void Start(const Snake &snake) {
 
       if (y == snake.GetHeadPosY() && x == snake.GetHeadPosX())
         printw("O");
-      else if (y == fruitY && x == fruitX)
+      else if (y == fruit.GetPosY() && x == fruit.GetPosX())
         printw("X");
       else {
         bool print = false;

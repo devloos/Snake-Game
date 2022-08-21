@@ -1,7 +1,7 @@
 #include "Logic.h"
 
 namespace Logic {
-void Start(Snake &snake) {
+void Start(Snake &snake, Fruit &fruit) {
   srand(time(0));
   int prevX = snake.GetTailPosAt(0).first;
   int prevY = snake.GetTailPosAt(0).second;
@@ -50,16 +50,15 @@ void Start(Snake &snake) {
 
   if (PosX > (Constant::WIDTH - 1) || PosY > (Constant::HEIGHT - 1) || PosX < 0 ||
       PosY < 0) {
-    gameOver = true;
-  } else if (PosX == fruitX && PosY == fruitY) {
-    fruitX = rand() % Constant::WIDTH;
-    fruitY = rand() % Constant::HEIGHT;
+    GameOver = true;
+  } else if (PosX == fruit.GetPosX() && PosY == fruit.GetPosY()) {
+    fruit.RandomizePos();
     snake.PushBackTailPos(-2, -2);
     snake.IncTailCount();
   }
   for (int i = 0; i < snake.GetTailCount(); i++) {
     if (PosX == snake.GetTailPosAt(i).first && PosY == snake.GetTailPosAt(i).second) {
-      gameOver = true;
+      GameOver = true;
     }
   }
 }

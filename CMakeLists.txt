@@ -7,7 +7,7 @@ project(snake)
 
 add_executable(
     ${PROJECT_NAME} src/core/Main.cpp src/core/Application.cpp
-    src/draw/Draw.cpp src/sprites/Snake.cpp
+    src/draw/Draw.cpp src/sprites/Snake.cpp src/sprites/Fruit.cpp
     src/logic/Logic.cpp src/print/Print.cpp src/input/Input.cpp)
 target_include_directories(${PROJECT_NAME} PUBLIC /include)
 

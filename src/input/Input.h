@@ -8,7 +8,7 @@
 #include "../print/Print.h"
 #include "../sprites/Snake.h"
 #include "../states/Direction.h"
-extern bool gameOver;
+extern bool GameOver;
 
 namespace Input {
 const std::string choices[] = {"Play", "Exit"};

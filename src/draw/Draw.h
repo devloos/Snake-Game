@@ -6,13 +6,13 @@
 #include <cstdint>
 
 #include "../constants/Constant.h"
+#include "../sprites/Fruit.h"
 #include "../sprites/Snake.h"
 
-extern int fruitX, fruitY;
-extern bool gameOver;
+extern bool GameOver;
 
 namespace Draw {
-void Start(const Snake &snake);
+void Start(const Snake &snake, const Fruit &fruit);
 }  // namespace Draw
 
 #endif  // DRAW_H_

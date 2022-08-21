@@ -1,31 +1,26 @@
 #include "Application.h"
-bool gameOver;
-int fruitX, fruitY;
+bool GameOver = false;
 
 namespace Application {
 void Start() {
   Snake snake(Constant::WIDTH / 2, Constant::HEIGHT / 2, Dir::Stop);
+  Fruit fruit(rand() % Constant::WIDTH, rand() % Constant::HEIGHT);
   Setup(snake);
   if (Input::Play()) {
     initscr();
     nodelay(stdscr, TRUE);
     cbreak();
     keypad(stdscr, TRUE);
-    while (!gameOver) {
-      Draw::Start(snake);
+    while (!GameOver) {
+      Draw::Start(snake, fruit);
       Input::Start(snake);
-      Logic::Start(snake);
+      Logic::Start(snake, fruit);
     }
     endwin();
   }
 }
 
 void Setup(Snake &snake) {
-  gameOver = false;
-
-  fruitX = rand() % Constant::WIDTH;
-  fruitY = rand() % Constant::HEIGHT;
-
   snake.PushBackTailPos(snake.GetHeadPosX(), snake.GetHeadPosY());
 }
 

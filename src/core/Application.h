@@ -1,6 +1,7 @@
 #ifndef APPLICATION_H_
 #define APPLICATION_H_
 #include <ncurses.h>
+#include <stdlib.h>
 
 #include <vector>
 
@@ -8,9 +9,10 @@
 #include "../draw/Draw.h"
 #include "../input/Input.h"
 #include "../logic/Logic.h"
+#include "../sprites/Fruit.h"
 #include "../sprites/Snake.h"
 
-extern bool gameOver;
+extern bool GameOver;
 
 namespace Application {
 void Start();
