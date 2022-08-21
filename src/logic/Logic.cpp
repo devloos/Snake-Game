@@ -54,7 +54,7 @@ void Start(Snake &snake) {
   } else if (PosX == fruitX && PosY == fruitY) {
     fruitX = rand() % Constant::WIDTH;
     fruitY = rand() % Constant::HEIGHT;
-    snake.PushBackTailPos(0, 0);
+    snake.PushBackTailPos(-2, -2);
     snake.IncTailCount();
   }
   for (int i = 0; i < snake.GetTailCount(); i++) {
