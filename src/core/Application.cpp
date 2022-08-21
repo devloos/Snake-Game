@@ -1,47 +1,32 @@
 #include "Application.h"
 bool gameOver;
-const int WIDTH{55}, HEIGHT{20};
-std::vector<int> tailx;
-std::vector<int> taily;
-int playerX, playerY, fruitX, fruitY, c, nTail;
-Dir dir = Stop;
-bool choiceMade;
+int fruitX, fruitY;
 
 namespace Application {
 void Start() {
-  srand(time(0));
-  Setup();
-  Input::Menu();
-  if (!gameOver) {
+  Snake snake(Constant::WIDTH / 2, Constant::HEIGHT / 2, Dir::Stop);
+  Setup(snake);
+  if (Input::Play()) {
     initscr();
     nodelay(stdscr, TRUE);
     cbreak();
     keypad(stdscr, TRUE);
     while (!gameOver) {
-      draw();
-      input();
-      logic();
+      Draw::Start(snake);
+      Input::Start(snake);
+      Logic::Start(snake);
     }
     endwin();
   }
 }
 
-void Setup() {
-  tailx.clear();
-  taily.clear();
-
+void Setup(Snake &snake) {
   gameOver = false;
 
-  playerX = WIDTH / 2;
-  playerY = HEIGHT / 2;
+  fruitX = rand() % Constant::WIDTH;
+  fruitY = rand() % Constant::HEIGHT;
 
-  fruitX = rand() % WIDTH;
-  fruitY = rand() % HEIGHT;
-
-  tailx.push_back(playerX);
-  taily.push_back(playerY);
-
-  nTail = 0;
+  snake.PushBackTailPos(snake.GetHeadPosX(), snake.GetHeadPosY());
 }
 
 }  // namespace Application

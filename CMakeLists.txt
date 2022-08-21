@@ -6,9 +6,9 @@ set(CMAKE_BUILD_TYPE Debug)
 project(snake)
 
 add_executable(
-    ${PROJECT_NAME} src/core/Snake.cpp src/core/Application.cpp
-    src/setup.cpp src/handlers/draw.cpp src/handlers/input.cpp
-    src/handlers/logic.cpp src/print/Print.cpp src/input/Input.cpp)
+    ${PROJECT_NAME} src/core/Main.cpp src/core/Application.cpp
+    src/draw/Draw.cpp src/sprites/Snake.cpp
+    src/logic/Logic.cpp src/print/Print.cpp src/input/Input.cpp)
 target_include_directories(${PROJECT_NAME} PUBLIC /include)
 
 find_library(ncurses ncurses)

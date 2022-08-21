@@ -4,24 +4,17 @@
 
 #include <vector>
 
+#include "../constants/Constant.h"
+#include "../draw/Draw.h"
 #include "../input/Input.h"
+#include "../logic/Logic.h"
+#include "../sprites/Snake.h"
 
-enum Dir { Stop = 0, Up, Down, Left, Right };
 extern bool gameOver;
-extern const int WIDTH, HEIGHT;
-extern std::vector<int> tailx;
-extern std::vector<int> taily;
-extern int playerX, playerY, fruitX, fruitY, c, nTail;
-extern char* choices[];
-extern bool choiceMade;
-
-void draw();
-void input();
-void logic();
 
 namespace Application {
 void Start();
-void Setup();
+void Setup(Snake &snake);
 
 }  // namespace Application
 

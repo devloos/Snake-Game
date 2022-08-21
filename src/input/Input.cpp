@@ -1,7 +1,35 @@
 #include "Input.h"
+static int c;
 
 namespace Input {
-void Menu() {
+void Start(Snake &snake) {
+  c = getch();
+  if (c != -1) {
+    switch (c) {
+      case KEY_LEFT: {
+        snake.SetDirection(Dir::Left);
+        break;
+      }
+      case KEY_RIGHT: {
+        snake.SetDirection(Dir::Right);
+        break;
+      }
+      case KEY_DOWN: {
+        snake.SetDirection(Dir::Down);
+        break;
+      }
+      case KEY_UP: {
+        snake.SetDirection(Dir::Up);
+        break;
+      }
+      default: {
+        break;
+      }
+    }
+  }
+}
+
+bool Play() {
   bool choiceMade;
   WINDOW* menu_win;
   int Highlighted = PLAY;
@@ -37,7 +65,11 @@ void Menu() {
         break;
       }
       case 10: {
-        if (Highlighted == EXIT) gameOver = true;
+        if (Highlighted == EXIT) {
+          refresh();
+          endwin();
+          return false;
+        }
         choiceMade = true;
         break;
       }
@@ -50,5 +82,6 @@ void Menu() {
   } while (!choiceMade);
   refresh();
   endwin();
+  return true;
 }
 }  // namespace Input
